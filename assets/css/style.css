@@ -20,6 +20,9 @@ a{
   text-decoration: none;
   color: #fff;
 }
+.hamburger{
+  display: none;
+}
 
 .menu{
 	background-color: #544945;
@@ -27,10 +30,15 @@ a{
 }
 
 .pag{
-   background-color: #544945;
+  background-color: #544945;
   padding: 100px 0px 100px 0;
   background-color: rgba(0,0,0,0.5);
   height: 16em;
+}
+
+.contact p{
+  margin :0;
+  font-size: 0.8em;
 }
 
 img{
