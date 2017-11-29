@@ -1,3 +1,4 @@
+/*header*/
 header{
 	background-image: url(../img/bg-equipo2.jpg);
   background-position: center center;
@@ -20,8 +21,19 @@ a{
   text-decoration: none;
   color: #fff;
 }
+
+a:hover {
+  text-decoration: none;
+  color: #00ffed;
+}
+
 .hamburger{
   display: none;
+}
+
+.hamburger:hover{
+	color: #00ffed;
+	font-size: 1.9em;
 }
 
 .menu{
@@ -41,10 +53,16 @@ a{
   font-size: 0.8em;
 }
 
+.logo{
+	color:#00ffed;
+}
+
+/*imagen*/
 img{
 	width: 100%;
 }
 
+/*botones*/
 button{
   color: #fff;
   background: #000820;
@@ -52,6 +70,12 @@ button{
   padding: 1em;
 }
 
+button:hover{
+	background: #00ffed;
+	color: #000820;
+}
+
+/*footer*/
 footer{
 	background-color: #000820;
 	height: 5em;

@@ -118,11 +118,12 @@ p {
 .row {
   position: relative;
   width: 100%;
+  vertical-align: bottom;
 }
 
 .row [class^="col"] {
   float: left;
-  margin: 0.5rem 2%;
+  margin: 0.5rem 1%;
   min-height: 0.125rem;
 }
 
@@ -199,6 +200,9 @@ p {
 	display: none;
 }
 */
+
+/*medias*/
+
 @media (max-width: 500px){
 	.navegador{
 		display: none;
@@ -226,7 +230,40 @@ p {
 	}
 
 	col-1{
-		width: 30px;
+		width: 50%;
+		float: right;
+		margin-top: 0.5em;
+		margin-left: 0.8em;
+	}
+}
+@media (min-width: 501px) and (max-width: 600px){
+	.navegador{
+		display: none;
+	}
+
+	.logo{
+		width: 50%;
+		float: left;
+	}
+
+	.vacio{
+		display: none;
+	}
+
+	.hamburger{
+	display: inline-block;
+	width: 20%;
+	float: right;
+	z-index: 40;
+	color: #fff;
+	font-size: 1.5em;
+	text-align: right;
+	padding-top: 20px;
+	padding-left: 20px;
+	}
+
+	col-1{
+		width: 20%;
 		float: right;
 		margin-top: 0.5em;
 		margin-left: 0.8em;
@@ -234,21 +271,30 @@ p {
 }
 
 /*tablets*/
-@media (min-width: 640px) and (max-width: 991px){
+@media (min-width: 601px) and (max-width: 991px){
   [class*="col-"] {
     width: 100%;
     object-fit: cover;
   }
-    .navegador{
-    display: none;
-  }
+  .logo{
+		width: 50%;
+		float: left;
+	}
+  .vacio{
+		width: 4.33%;
+	}
+	.navegador{
+		width: 37.66%;
+	}
+	ul{
+		font-size: 0.8em;
+		vertical-align: bottom;
+		padding-left: 0;
+	}
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
-  .container {
-    width: 80%;
-  }
-}
+
+
 
 @media only screen and (min-width: 45em) {  /* 720px */
   .col-1 {
@@ -305,22 +351,3 @@ p {
 }
 */
 
-@media only screen and (min-width: 60em) { /* 960px */
-  .container {
-    width: 75%;
-    max-width: 60rem;
-  }
-}
-
-
-
-
-/*desktop*/
-@media (min-width: 992px) and (max-width: 1199px){
-
-}
-
-/*extra desktop*/
-@media (min-width: 1200px){
-
-}
