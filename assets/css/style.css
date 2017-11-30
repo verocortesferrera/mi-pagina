@@ -20,11 +20,13 @@ ul li {
 a{
   text-decoration: none;
   color: #fff;
+
 }
 
 a:hover {
   text-decoration: none;
   color: #00ffed;
+  text-transform: uppercase;
 }
 
 .hamburger{
@@ -41,6 +43,10 @@ a:hover {
 	height: 5em;
 }
 
+.navegador{
+  text-align: right;
+}
+
 .pag{
   background-color: #544945;
   padding: 100px 0px 100px 0;
@@ -55,6 +61,8 @@ a:hover {
 
 .logo{
 	color:#00ffed;
+  text-align: left;
+  padding-left: 1em;
 }
 
 /*imagen*/
@@ -68,6 +76,8 @@ button{
   background: #000820;
   font-size: 0.8em;
   padding: 1em;
+  border: none;
+  border-radius: 10px;
 }
 
 button:hover{
